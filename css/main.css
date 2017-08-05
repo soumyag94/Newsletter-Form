@@ -6,21 +6,42 @@ body {
   margin: 0 auto;
 }
 
-/*------FLEX----------*/
+
+/*----------Navigation & Header----------*/
 #nav {
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #161616;
+background-color: #34414b;
 color: white;
 margin: 0 auto;
+font-size: 1.4em;
+text-transform: uppercase;
+font-weight: lighter;
 }
 #header {
-
+  display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0;
+  border-bottom: solid 4px #34414b;
 }
-#header p {
+
+#header h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #536878;
+  padding-bottom: 10px;
+}
+
+#header h2, #header p {
   margin: 0 auto;
-  padding: 0 20px;
+  text-align: center;
+}
+
+#header p {
+  line-height: 1.2;
+  font-size: 1;
+  color: #d5dce2;
+  font-weight: lighter;
 }

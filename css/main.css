@@ -6,6 +6,9 @@ body {
   margin: 0 auto;
 }
 
+#container {
+  margin: 0 10px;
+}
 
 /*----------Navigation & Header----------*/
 #nav {
@@ -23,11 +26,11 @@ font-weight: lighter;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 20px 0;
-  border-bottom: solid 4px #34414b;
+  margin: 20px 0 5px 0;
+border-bottom: solid 4px #536878;
 }
 
-#header h2 {
+#header h2, legend {
   font-weight: bold;
   font-size: 1.6em;
   color: #536878;
@@ -42,6 +45,59 @@ font-weight: lighter;
 #header p {
   line-height: 1.2;
   font-size: 1;
-  color: #d5dce2;
+  color: #536878;
   font-weight: lighter;
+  padding-bottom: 15px;
+  opacity: 0.4;
+}
+
+
+/*----------Form----------*/
+fieldset {
+  border: 0;
+}
+
+.border {
+    border-top: solid 2px #536878;
+}
+#contact-information, #newsletter-options {
+  margin-top: 15px;
+  padding: 0;
+}
+
+label {
+font-weight: lighter;
+  color: #778fa1;
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background:#f8f9fa;
+  border: none;
+  font-size: 12px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+input::placeholder {
+  font-style: italic;
+  text-align: right;
+  opacity: 0.6;
 }

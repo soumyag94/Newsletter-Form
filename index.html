@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up Form</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
         <link rel="stylesheet" href="css/main.css">
     </head>
 <nav id="nav">
   <h1>The Code Review</h1>
 </nav>
+
+<section id="container">
 <header id="header">
 <h2>Signup for our newsletter</h2>
 <p>Get the latest news on how your code is doing right in your indbox.</p>
@@ -18,25 +21,26 @@
 <body>
   <form action="index.html" method="post">
 
-<fieldset>
+<div class="border">
+<fieldset id="contact-information">
   <legend>Contact Infromation</legend>
     <label for="name">Full Name</label><br>
-    <input type="text" id="name" name="user_name"><br>
+    <input type="text" id="name" name="user_name" placeholder="Required "><br>
 
     <label for="email">Email Addresss</label><br>
-    <input type="email" id="email" name="user_email"><br>
+    <input type="email" id="email" name="user_email" placeholder="Required "><br>
 
     <label for="tel">Phone Number</label><br>
     <input type="tel" id="tel" name="user_tel"><br>
 
-    <label for="address">Street Address</label><br>
-    <input type="text" id="address" name="user_address"><br>
+    <label for="street_address">Street Address</label><br>
+    <input type="text" id="street_address" name="user_street"><br>
 
-    <label for="address">City</label><br>
-    <input type="text" id="address" name="user_address"><br>
+    <label for="city_address">City</label><br>
+    <input type="text" id="city_address" name="user_city"><br>
 
-    <label for="address">State</label><br>
-    <select id="address" name="user_address">
+    <label for="state_address">State</label><br>
+    <select id="state-address" name="user_state">
         <option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
       	<option value="AZ">Arizona</option>
@@ -90,11 +94,13 @@
       	<option value="WY">Wyoming</option>
     </select><br>
 
-    <label for="address">Zip Code</label><br>
-    <input type="text" id="address" name="user_address"><br>
+    <label for="zip_address">Zip Code</label><br>
+    <input type="text" id="zip_address" name="user_zipcode"><br>
 </fieldset>
+</div>
 
-<fieldset>
+<div class="border">
+<fieldset id="newsletter-options">
 <legend>Newsletter</legend>
 <label>Select the newsletters you would like to recieve</label><br>
   <input type="checkbox" id="newsletter_type" value="html_news" name="user_newsletter"><label  for="newsletter_type">HTML News</label><br>
@@ -110,8 +116,11 @@
 
 <button type="submit">Sign Up</button>
   </form>
+</div>
 </body>
 
 <footer>
 <p>Copyright The Code Review</p>
 </footer>
+
+</section>

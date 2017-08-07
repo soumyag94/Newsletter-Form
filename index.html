@@ -41,6 +41,7 @@
 
     <label for="state_address">State</label><br>
     <select id="state-address" name="user_state">
+      <option disabled="" selected="">Choose State</option>
         <option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
       	<option value="AZ">Arizona</option>
@@ -102,16 +103,21 @@
 <div class="border">
 <fieldset id="newsletter-options">
 <legend>Newsletter</legend>
-<label>Select the newsletters you would like to recieve</label><br>
-  <input type="checkbox" id="newsletter_type" value="html_news" name="user_newsletter"><label  for="newsletter_type">HTML News</label><br>
-  <input type="checkbox" id="newsletter_type" value="css_news" name="user_newsletter"><label  for="newsletter_type">CSS News</label><br>
-  <input type="checkbox" id="newsletter_type" value="javascript_news" name="user_newsletter"><label  for="newsletter_type">Javascript News</label><br>
+  <h3 class="sub-headings">Select the newsletters you would like to recieve</h3>
+      <section class="lable-space">  <input type="checkbox" id="newsletter_type" value="html_news" name="user_newsletter"><label  for="newsletter_type">HTML News</label></section>
 
-  <label>Newsletter format</label><br>
-    <input type="radio" id="newsletter_format" value="html" name="user_newsletter_format"><label  for="newsletter_type">HTML</label><br>
-    <input type="radio" id="newsletter_format" value="plain_text" name="user_newsletter_format"><label  for="newsletter_format">Plain Text</label><br>
-    <label id="other_comments" for="newsletter_others"> Other topics you'd like to hear about </label>
-    <textarea id="other_comments" name="newsletter_others"></textarea>
+        <section class="lable-space"> <input type="checkbox" id="newsletter_type" value="css_news" name="user_newsletter"><label  for="newsletter_type">CSS News</label></section>
+
+        <section class="lable-space"> <input type="checkbox" id="newsletter_type" value="javascript_news" name="user_newsletter"><label  for="newsletter_type">Javascript News</label></section>
+
+  <h3 class="sub-headings">Newsletter format</h3>
+        <section class="lable-space"> <input type="radio" id="newsletter_format" value="html" name="user_newsletter_format"><label for="newsletter_type">HTML</label></section>
+
+        <section class="lable-space"> <input type="radio" id="newsletter_format" value="plain_text" name="user_newsletter_format"><label  for="newsletter_format">Plain Text</label></section>
+
+  <label class="sub-headings" id="other_comments" for="newsletter_others"> Other topics you'd like to hear about </label>
+  <textarea id="other_comments" name="newsletter_others"></textarea>
+
 </fieldset>
 
 <button type="submit">Sign Up</button>

@@ -32,7 +32,7 @@ border-bottom: solid 4px #536878;
 
 #header h2, legend {
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: #536878;
   padding-bottom: 10px;
 }
@@ -65,11 +65,12 @@ fieldset {
   padding: 0;
 }
 
-label {
+label, h3 {
 font-weight: lighter;
   color: #778fa1;
-  font-size: 1.1em;
-  opacity: 0.9;
+  font-size: 1em;
+  line-height: 1.2;
+  opacity: 0.7;
 }
 
 
@@ -81,23 +82,78 @@ textarea,
 select {
   background:#f8f9fa;
   border: none;
-  font-size: 12px;
+  font-size: 15px;
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 12px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 10px;
   border-radius: 5px;
 }
 
+textarea {
+  height: 100px;
+}
+
+select {
+  font-size: 15px;
+  height: 45px;
+}
 
 input::placeholder {
   font-style: italic;
   text-align: right;
   opacity: 0.6;
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+input[type="radio"] + label ,
+input[type="checkbox"] + label {
+padding-left: 20px;
+}
+
+.lable-space {
+  margin-bottom: 10px;
+}
+
+.sub-headings{
+  padding-bottom: 10px;
+}
+
+
+/***********BUTTON************/
+
+button {
+  background-color: #00ced1;
+  font-family:'PT Serif', serif;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-size: 1.3em;
+  color: white;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+/************FOOTER***********/
+
+footer {
+  margin: 0 auto;
+  font-style: italic;
+  opacity: 0.7;
+  color: #8a97a0;
+  text-align: center;
+}
+
+@media query {
+
 }

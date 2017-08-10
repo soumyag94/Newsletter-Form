@@ -2,7 +2,7 @@
   font-family: 'PT Serif', serif;
   box-sizing: border-box;
 }
-body {
+form, body {
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ border-bottom: solid 4px #536878;
 
 #header p {
   line-height: 1.2;
-  font-size: 1;
+  font-size: 1em;
   color: #536878;
   font-weight: lighter;
   padding-bottom: 15px;
@@ -137,6 +137,15 @@ padding-left: 1px;
   padding-bottom: 10px;
 }
 
+/***********TRANSITION************/
+
+.form-info label + input[type="text"]:focus,
+.form-info label + input[type="email"]:focus,
+.form-info label + input[type="tel"]:focus
+{
+background-color: #daedf4;
+}
+
 /**************Changing the radio and checkbox buttons*******/
 .lable-space {
   display: flex;
@@ -172,7 +181,7 @@ input[type="checkbox"] {
   content: "\2713";
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
   font-size: 10px;
-  background-color: #1e90ff;
+  background-color: #389abe;
   color: #fff;
   text-align: center;
   line-height: 14px;
@@ -183,7 +192,7 @@ input[type="radio"]:checked + label::before  {
  content: "\2022";
  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
  font-size: 15px;
- background-color: #1e90ff;
+ background-color: #389abe;
  color: #fff;
  text-align: center;
  line-height: 14px;
@@ -195,6 +204,9 @@ input[type="radio"]:checked + label::before  {
 .checkbox label::before {
   border-radius: 4px;
 }
+
+
+
 /***********BUTTON************/
 
 button {

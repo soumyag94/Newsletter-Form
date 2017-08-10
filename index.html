@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
 
-
-</style>
 <nav id="nav">
   <h1>The Code Review</h1>
 </nav>
@@ -21,20 +19,19 @@
 <p>Get the latest news on how your code is doing right in your indbox.</p>
 </header>
 
-<body>
   <form action="index.html" method="post">
 
 <div class="border">
 <fieldset id="contact-information">
   <legend>Contact Infromation</legend>
   <section class="form-info">  <label for="name">Full Name</label>
-    <input type="text" id="name" name="user_name" placeholder="Required "></section>
+    <input type="text" id="name" name="user_name" placeholder="Required " required="" ></section>
 
     <section class="form-info"> <label for="email">Email Addresss</label>
-    <input type="email" id="email" name="user_email" placeholder="Required "></section>
+    <input type="email" id="email" name="user_email" placeholder="Required " required=""></section>
 
     <section class="form-info"> <label for="tel">Phone Number</label>
-    <input type="tel" id="tel" name="user_tel" placeholder="Required " ></section>
+    <input type="tel" id="tel" name="user_tel" placeholder="Required " required="" ></section>
 
     <section class="form-info"> <label for="street_address">Street Address</label>
     <input type="text" id="street_address" name="user_street"></section>
@@ -43,7 +40,7 @@
     <input type="text" id="city_address" name="user_city"></section>
 
   <section class="form-info">   <label for="state_address">State</label>
-    <select id="state-address" name="user_state">
+    <select id="state_address" name="user_state">
       <option disabled="" selected="">Choose State</option>
         <option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
@@ -118,18 +115,18 @@
 
         <section class="radio lable-space"> <input type="radio" id="type_plain" value="plain_text" name="user_newsletter_format"><label  for="type_plain">Plain Text</label></section>
 
-  <label class="sub-headings" id="other_comments" for="newsletter_others"> Other topics you'd like to hear about: </label>
+  <label class="sub-headings" for="other_comments"> Other topics you'd like to hear about: </label>
   <textarea id="other_comments" name="newsletter_others"></textarea>
 
 </fieldset>
 
 <button type="submit">Sign Up</button>
-  </form>
 </div>
-</body>
+  </form>
 
 <footer>
 <p>Copyright The Code Review</p>
 </footer>
 
-</section> <!--container->
+<!-- container -->
+</section>
